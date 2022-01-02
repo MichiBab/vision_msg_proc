@@ -328,10 +328,6 @@ class VisualizerRepubr {
         double diff = curtime - pts;
         if (diff > 1.d) {
             double fps = (cc - 1) / diff;
-            std::cout << ("synced image callback fps[%.2lf] avg[%.2lf]ms {color,colorInfo,depth,depthInfo}[%.3lf,%.3lf,%.3lf,%.3lf]", fps, 1000.d / fps,
-                          color->header.stamp.toSec(), colorInfo->header.stamp.toSec(),
-                          depth->header.stamp.toSec(), depthInfo->header.stamp.toSec())
-                      << std::endl;
             pts = curtime;
             cc = 1;
         }
