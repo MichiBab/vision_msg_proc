@@ -382,8 +382,8 @@ string VisualizerRepubr::RsColorTopic = "/loomo/camera/color/image_raw";
 string VisualizerRepubr::RsColorInfoTopic = "/loomo/camera/color/camera_info";
 string VisualizerRepubr::RsDepthTopic = "/loomo/camera/depth/image_raw";
 string VisualizerRepubr::RsDepthInfoTopic = "/loomo/camera/depth/camera_info";
-string VisualizerRepubr::RsPointCloudTopic = "realsense/pointcloud";
-string VisualizerRepubr::RsPointCloud2Topic = "realsense/pointcloud2";
+string VisualizerRepubr::RsPointCloudTopic = "/realsense/pointcloud";
+string VisualizerRepubr::RsPointCloud2Topic = "/realsense/pointcloud2";
 
 int main(int argc, char** argv) {
     ros::init(argc, argv, "loomo_vision_node");
