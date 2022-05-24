@@ -2,12 +2,12 @@
 <launch>
   <arg name="topic_prefix" default=""/>
   <node pkg="loomo_vision" type="loomo_vision_node" name="loomo_vision_node" output="screen" >
-    <param name="image_transport" value="compressed"/>
-    <remap from="/loomo/camera/color/image_raw/compressed" to="$(arg topic_prefix)/loomo/camera/color/image_raw/compressed"/>
-      <remap from="/loomo/camera/color/image_raw" to="$(arg topic_prefix)/loomo/camera/color/image_raw"/>
-      <remap from="/loomo/camera/color/camera_info" to="$(arg topic_prefix)/loomo/camera/color/camera_info"/>
-      <remap from="/loomo/camera/depth/image_raw" to="$(arg topic_prefix)/loomo/camera/depth/image_raw"/>
-      <remap from="/loomo/camera/depth/camera_info" to="$(arg topic_prefix)/loomo/camera/depth/camera_info"/>
+      <param name="image_transport" value="compressed"/>
+      <remap from="/camera/color/image_raw/compressed" to="$(arg topic_prefix)/camera/color/image_raw/compressed"/>
+      <remap from="/camera/color/image_raw" to="$(arg topic_prefix)/camera/color/image_raw"/>
+      <remap from="/camera/color/camera_info" to="$(arg topic_prefix)/camera/color/camera_info"/>
+      <remap from="/camera/depth/image_raw" to="$(arg topic_prefix)/camera/depth/image_raw"/>
+      <remap from="/camera/depth/camera_info" to="$(arg topic_prefix)/camera/depth/camera_info"/>
       <remap from= "/realsense/pointcloud" to="$(arg topic_prefix)/realsense/pointcloud"/>
       <remap from="/realsense/pointcloud2" to="$(arg topic_prefix)/realsense/pointcloud2"/>
   </node>

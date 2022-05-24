@@ -374,10 +374,10 @@ class VisualizerRepubr {
 };
 
 // default values for these topic names
-string VisualizerRepubr::RsColorTopic = "/loomo/camera/color/image_raw";
-string VisualizerRepubr::RsColorInfoTopic = "/loomo/camera/color/camera_info";
-string VisualizerRepubr::RsDepthTopic = "/loomo/camera/depth/image_raw";
-string VisualizerRepubr::RsDepthInfoTopic = "/loomo/camera/depth/camera_info";
+string VisualizerRepubr::RsColorTopic = "/camera/color/image_raw";
+string VisualizerRepubr::RsColorInfoTopic = "/camera/color/camera_info";
+string VisualizerRepubr::RsDepthTopic = "/camera/depth/image_raw";
+string VisualizerRepubr::RsDepthInfoTopic = "/camera/depth/camera_info";
 string VisualizerRepubr::RsPointCloudTopic = "/realsense/pointcloud";
 string VisualizerRepubr::RsPointCloud2Topic = "/realsense/pointcloud2";
 
